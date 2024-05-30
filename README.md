@@ -27,5 +27,7 @@ Test podatności (CVE) został zintegrowany z wykorzystaniem akcji GitHub Action
 <img width="1051" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/283454ef-2209-4026-ac07-f3598d11bcd2">
 <img width="597" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/5f35f0ea-7f6d-4589-b7f7-2849395c37c7">
 <img width="684" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/05ef8cc4-9134-4041-ad4a-b753910b814d">
-<img width="785" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/a5121d62-7c37-475b-b997-60a44ac4bb2a">
-
+<img width="957" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/7b3d8580-b45b-4811-8f42-efbd564e051f">
+<img width="950" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/c5dd2922-1e6d-4838-b1f7-3514828a93f5">
+<img width="960" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/2c057296-b31d-4695-b43d-ae1026816a30">
+<img width="851" alt="image" src="https://github.com/SlaneDRV/DockerZad2/assets/125742851/639b7977-59ae-4e0a-9e3c-831204d8fc78">
