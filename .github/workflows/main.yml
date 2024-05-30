@@ -85,6 +85,14 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.TOKEN_GITHUB }}
 
+      - name: Generate GHCR Metadata
+        id: meta-ghcr
+        if: ${{ steps.check-critical.outcome == 'success' }}
+        uses: docker/metadata-action@v4
+        with:
+          images: ghcr.io/${{ github.repository }}
+          tags: latest
+
       - name: Push Image to GHCR
         if: ${{ steps.check-critical.outcome == 'success' }}
         uses: docker/build-push-action@v4
