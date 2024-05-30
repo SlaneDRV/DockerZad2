@@ -95,4 +95,5 @@ jobs:
           push: true
           cache-from: type=registry,ref=ghcr.io/${{ github.repository_owner }}/example:cache
           cache-to: type=registry,ref=ghcr.io/${{ github.repository_owner }}/example:cache
-          tags: ghcr.io/${{ github.repository_owner }}/example:latest
+          tags: ${{ 'ghcr.io/' + github.repository.toLowerCase() + '/example:latest' }}
+
