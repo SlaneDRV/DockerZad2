@@ -26,4 +26,5 @@ Test podatności (CVE) został zintegrowany z wykorzystaniem akcji GitHub Action
 ## Uruchomienie Łańcucha CI
 ![image](https://github.com/SlaneDRV/DockerZad2/assets/125742851/b35d75e6-98a7-4adb-8760-eba1b731b28c)
 ![image](https://github.com/SlaneDRV/DockerZad2/assets/125742851/9c82fdf5-6776-4018-b281-50b58f5a6923)
+![image](https://github.com/SlaneDRV/DockerZad2/assets/125742851/86d946f1-4cb7-4594-8814-ecdff683b020)
 
