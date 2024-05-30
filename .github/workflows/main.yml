@@ -86,8 +86,8 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
 
       - name: Push Image to GHCR
-        if: success()
-        uses: docker/build-push-action@v5
+        if: ${{ steps.check-cves.outcome == 'success' }}
+        uses: docker/build-push-action@v4
         with:
           context: .
           file: ./Dockerfile
