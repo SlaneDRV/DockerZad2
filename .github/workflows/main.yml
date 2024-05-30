@@ -64,6 +64,7 @@ jobs:
           summary: true
 
       - name: Check for Critical Vulnerabilities
+        id: check-critical
         run: |
           vulnerabilities=$(jq '[.runs[].results[].level] | {"critical": (map(select(. == "error")) | length), "high": (map(select(. == "warning")) | length)}' sarif.output.json)
           critical_count=$(echo "$vulnerabilities" | jq '.critical')
@@ -75,10 +76,9 @@ jobs:
           else
             echo "No critical or high vulnerabilities found."
           fi
-        shell: bash
 
       - name: Authenticate to GHCR
-        if: ${{ steps.check-cves.outcome == 'success' }}
+        if: ${{ steps.check-critical.outcome == 'success' }}
         uses: docker/login-action@v1
         with:
           registry: ghcr.io
@@ -86,7 +86,7 @@ jobs:
           password: ${{ secrets.TOKEN_GITHUB }}
 
       - name: Push Image to GHCR
-        if: ${{ steps.check-cves.outcome == 'success' }}
+        if: ${{ steps.check-critical.outcome == 'success' }}
         uses: docker/build-push-action@v4
         with:
           context: .
